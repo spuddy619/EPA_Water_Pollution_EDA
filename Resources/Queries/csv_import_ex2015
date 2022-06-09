@@ -1,0 +1,28 @@
+-- Importing CSV files retrieved from EPA into pgadmin
+-- example for year 2015 below
+CREATE TABLE state_stats_2015
+("EPA Region" integer,
+ "State" character varying,
+ "# of Majors in ICIS-NPDES" integer,
+ "# of Non-Majors in ICIS-NPDES" integer,
+ "# of Majors w/ Pollutant Loadings" integer,
+ "# of Non-Majors w/ Pollutant Loadings" integer,
+ "% of Majors w/ Pollutant Loadings" double precision, 
+ "% of Non-Majors w/ Pollutant Loadings" double precision, 
+ "Total Pollutant Pounds (lb/yr) for Majors" double precision,
+ "Total Pollutant Pounds (lb/yr) for Non-Majors" double precision,
+ "Total Toxic-Weighted Pounds (lb-eq/yr) for Majors" double precision,
+ "Total Toxic-Weighted Pounds (lb-eq/yr) for Non-Majors" double precision
+);
+
+-- Import CSV into the table brudder
+COPY state_stats_2015
+FROM 'C:\Users\junyo\Desktop\Projects\EPA_Water_Pollution_EDA\Resources\2015_state_stats.csv'
+DELIMITER ','
+CSV HEADER;
+
+--Look at the imported table
+SELECT *
+FROM state_stats_2015
+
+
