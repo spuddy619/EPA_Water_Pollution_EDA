@@ -13,3 +13,6 @@ Exploring data from the US Environmental Protection Agency concerning water poll
 # NOTES FOR LATER - DELETE WHEN FINISHED:
 - "It is important to note that this value is not a measure of risk or potential for human health impacts. EPA presently lacks on a national scale the detailed exposure assessment data and tools necessary to complete a risk assessment with these DMR data (e.g., analyze for each industrial facility the fate and transport of discharged pollutants in an actual water body, exposure pathways of pollutants to populations in a watershed, and uptake of the discharged pollutants)."
   - a point of further investigation; we tracked and explored the volume of pollutants but have not been able to assess actual impact on human wellbeing (what would the metric be?) which I imagine is an important task. With this data, we could factor in things like cancer and other health complications in the area.
+
+
+## 6/15/22: EPA warns toxic ‘forever chemicals’ more dangerous than once thought [(https://www.washingtonpost.com/climate-environment/2022/06/15/epa-pfas-forever-chemicals/)]. We have to be more concerned about understanding water and the ways we pollute it. We don't truly understand what our actions are doing to our environment and how the ramifications of those actions are going to harm us
