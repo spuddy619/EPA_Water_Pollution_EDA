@@ -1,0 +1,135 @@
+
+
+---- add a year column to each state_stats table
+ALTER TABLE state_stats_2007
+	ADD Year varchar;
+--	
+ALTER TABLE state_stats_2008
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2009
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2010
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2011
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2012
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2013
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2014
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2015
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2016
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2017
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2018
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2019
+	ADD Year varchar;
+--
+ALTER TABLE state_stats_2020
+	ADD Year varchar;
+	
+	
+
+---- Populate the year column
+UPDATE state_stats_2007
+SET year = '2007';
+
+SELECT * 
+FROM state_stats_2007
+--
+UPDATE state_stats_2008
+SET year = '2008';
+
+SELECT * 
+FROM state_stats_2008
+--
+UPDATE state_stats_2009
+SET year = '2009';
+
+SELECT * 
+FROM state_stats_2009
+--
+UPDATE state_stats_2010
+SET year = '2010';
+
+SELECT * 
+FROM state_stats_2010
+--
+UPDATE state_stats_2011
+SET year = '2011';
+
+SELECT * 
+FROM state_stats_2011
+--
+UPDATE state_stats_2012
+SET year = '2012';
+
+SELECT * 
+FROM state_stats_2012
+--
+UPDATE state_stats_2013
+SET year = '2013';
+
+SELECT * 
+FROM state_stats_2013
+--
+UPDATE state_stats_2014
+SET year = '2014';
+
+SELECT * 
+FROM state_stats_2014
+--
+UPDATE state_stats_2015
+SET year = '2015';
+
+SELECT * 
+FROM state_stats_2015
+--
+UPDATE state_stats_2016
+SET year = '2016';
+
+SELECT * 
+FROM state_stats_2016
+--
+UPDATE state_stats_2017
+SET year = '2017';
+
+SELECT * 
+FROM state_stats_2017
+--
+UPDATE state_stats_2018
+SET year = '2018';
+
+SELECT * 
+FROM state_stats_2018
+--
+UPDATE state_stats_2019
+SET year = '2019';
+
+SELECT * 
+FROM state_stats_2019
+--
+UPDATE state_stats_2020
+SET year = '2020';
+
+SELECT * 
+FROM state_stats_2020
+
+
+-- Clean for just the states
+-- check for null values
