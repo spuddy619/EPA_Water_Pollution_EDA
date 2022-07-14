@@ -1,5 +1,5 @@
 # EPA_Water_Pollution_EDA
-Exploring data from the US Environmental Protection Agency concerning water pollution by state
+Exploring data from the US Environmental Protection Agency concerning water pollution by state - overview of 2007 - 2020 window (established by available data from EPA)
 
 # Purpose and Background:
 - Explore state statistics on water pollution provided by the US Environmental Protection Agency via their Water Pollutant Loading Tool.
