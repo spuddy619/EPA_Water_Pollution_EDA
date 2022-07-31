@@ -1,0 +1,53 @@
+--  Steps --
+-- 1.) Clean up each year of tables 
+--     -get rid of non-states, null values
+--     -
+-- Analysis by state
+-- Take each year and get the state information (how to do this for every state? A for loop through list containing each state?)
+    --set up for loop and have place holder for list 
+
+SELECT *
+FROM --table--
+WHERE State = --state name here --
+
+-- This query repeatedly and joined together for a table with just 1 state data?
+
+
+
+--Step 1: create dataframe to house csv
+
+CREATE TABLE epa_2007(
+    epa_region VARCHAR,
+    state VARCHAR, 
+    m_num INTEGER, 
+    nm_num INTEGER,
+    m_pollutant_load INTEGER,
+    nm_pollutant_load INTEGER,
+    m_pollutant_percent DOUBLE PRECISION, -- up to 8 digits after the decimal point ( not all tho)
+    nm_pollutant_percent DOUBLE PRECISION,
+    m_pollutant_total DECIMAL,
+    nm_pollutant_total DECIMAL,
+    m_toxic_weight DECIMAL,
+    nm_toxic_weight DECIMAL,  
+)
+
+-- Step 2: populate the table with the csv data 
+
+--- OR ---
+
+COPY epa_2007(
+    epa_region,
+    state, 
+    m_num,
+    nm_num,
+    m_pollutant_load, 
+    nm_pollutant_load,
+    m_pollutant_percent,
+    nm_pollutant_percent,
+    m_pollutant_total,
+    nm_pollutant_total,
+    m_toxic_weight,
+    nm_toxic_weight)
+FROM 'C:\Users\junyo\Desktop\Projects\EPA_Water_Pollution_EDA\Resources\2007_state_stats.csv'
+DELIMITER ','
+CSV HEADER;
